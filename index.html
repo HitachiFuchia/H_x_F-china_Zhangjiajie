@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <title>Responsive 3D Parallax Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hide">
+    <nav>
+      <img src="img/logo.png" alt="Travelo" class="logo">
+      <ul>
+        <li>
+          <a href="#about">Über</a>
+        </li>
+        <li>
+          <a href="#tour">Tour</a>
+        </li>
+        <li class="search">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+        <li class="hamburger">
+          <a href="#">
+            <div class="bar"></div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="vignette hide"></div>
+
+    <img src="img/background.png" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-rotation="0"
+      data-distance="-200" class="parallax bg-img">
+
+    <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.32" data-speedz="0" data-rotation="0" data-distance="850"
+      class="parallax fog-7">
+
+    <img src="img/mountain_10.png" data-speedx="0.195" data-speedy="0.305" data-speedz="0" data-rotation="0"
+      data-distance="1100" class="parallax mountain-10">
+
+    <!--  <img src="img/fog_6.png" data-speedx="0.25" data-speedy="0.28" data-speedz="0" class="parallax fog-6"> -->
+
+    <img src="img/mountain_9.png" data-speedx="0.125" data-speedy="0.155" data-speedz="0.15" data-rotation="0.02"
+      data-distance="1700" class="parallax mountain-9">
+
+    <img src="img/mountain_8.png" data-speedx="0.1" data-speedy="0.11" data-speedz="0" data-rotation="0.02"
+      data-distance="1800" class="parallax mountain-8">
+
+    <img src="img/fog_5.png" data-speedx="0.16" data-speedy="0.105" data-speedz="0" data-rotation="0"
+      data-distance="1900" class="parallax fog-5">
+
+    <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.09"
+      data-distance="2000" class="parallax mountain-7">
+
+    <div class="text parallax" data-speedx="0.07" data-speedy="0.07" data-speedz="0" data-rotation="0.11">
+      <h2>China</h2>
+      <h1>Zhangjiajie</h1>
+    </div>
+
+    <img src="img/mountain_6.png" data-speedx="0.065" data-speedy="0.05" data-speedz="0.05" data-rotation="0.12"
+      data-distance="2300" class="parallax mountain-6">
+
+    <img src="img/fog_4.png" data-speedx="0.135" data-speedy="0.04" data-speedz="0" data-rotation="0"
+      data-distance="2400" class="parallax fog-4">
+
+    <img src="img/mountain_5.png" data-speedx="0.08" data-speedy="0.03" data-speedz="0.13" data-rotation="0.1"
+      data-distance="2550" class="parallax mountain-5">
+
+    <img src="img/fog_3.png" data-speedx="0.11" data-speedy="0.018" data-speedz="0" data-distance="2800"
+      class="parallax fog-3">
+
+    <img src="img/mountain_4.png" data-speedx="0.059" data-speedy="0.024" data-speedz="0" data-rotation="0.14"
+      data-distance="3200" class="parallax mountain-4">
+
+    <img src="img/mountain_3.png" data-speedx="0.04" data-speedy="0.018" data-speedz="0.32" data-rotation="0.05"
+      data-distance="3400" class="parallax mountain-3">
+
+    <img src="img/fog_2.png" data-speedx="0.15" data-speedy="0.0115" data-speedz="0" data-rotation="0"
+      data-distance="3600" class="parallax fog-2">
+
+    <img src="img/mountain_2.png" data-speedx="0.0235" data-speedy="0.013" data-speedz="0.42" data-rotation="0.15"
+      data-distance="3800" class="parallax mountain-2">
+
+    <img src="img/mountain_1.png" data-speedx="0.027" data-speedy="0.018" data-speedz="0.53" data-rotation="0.2"
+      data-distance="4000" class="parallax mountain-1">
+
+    <img src="img/sun_rays.png" class="sun-rays hide">
+
+    <img src="img/black_shadow.png" class="black-shadow hide">
+
+    <img src="img/fog_1.png" data-speedx="0.12" data-speedy="0.01" data-speedz="0" data-rotation="0"
+      data-distance="4200" class="parallax fog-1">
+  </main>
+
+  <section id="about" class="about__Zhangjiajie">
+    <h2 class="about__Zhangjiajie--heading">
+      Über Zhangjiajie
+    </h2>
+
+    <div class="about__Zhangjiajie--gallery-main-container">
+
+      <!-- First Container -->
+      <div class="gallery-main-container__first-container about-flex-container">
+        <img src="img/zhangjiajie.jpeg" alt="zhangjiajie">
+        <p>Zhangjiajie ist eine Stadt in der Provinz Hunan im Süden Chinas und ist vor allem für ihren atemberaubenden
+          Nationalpark, den Zhangjiajie National Forest Park, bekannt. Dieser Park wurde von der UNESCO als
+          Weltnaturerbe anerkannt und wurde durch den Film "Avatar" international berühmt, da er als Inspirationsquelle
+          für die schwebenden Bergsäulen im Film diente.</p>
+      </div>
+
+      <!-- Second Container -->
+      <div class="gallery-main-container__second-container about-flex-container">
+        <img src="img/zhangjiajie2.jpg" alt="zhangjiajie">
+        <p>Der Zhangjiajie National Forest Park ist geprägt von ungewöhnlichen Karstformationen, die sich aus Sandstein
+          erheben und oft von dichtem Nebel umhüllt sind, was der Landschaft eine märchenhafte und surreale Atmosphäre
+          verleiht. Die gläserne Skywalk-Brücke und der Bailong-Fahrstuhl, der sich an einer Bergsäule entlang bewegt,
+          sind weitere Attraktionen in dieser Region.</p>
+      </div>
+
+      <!-- Third Container -->
+      <div class="gallery-main-container__third-container about-flex-container">
+        <img src="img/zhangjiajie3.jpg" alt="zhangjiajie">
+        <p>Zhangjiajie bietet nicht nur spektakuläre Landschaften, sondern auch die Gelegenheit, die einzigartige Kultur
+          und Tradition der Tujia-Minderheit kennenzulernen, die in dieser Region beheimatet ist.</p>
+      </div>
+
+      <!-- Fourth Container -->
+      <div class="gallery-main-container__fourth-container about-flex-container">
+        <img src="img/zhangjiajie9.jpg" alt="zhangjiajie">
+        <p>Insgesamt ist Zhangjiajie ein beeindruckendes Reiseziel für Naturliebhaber und Abenteurer, die die
+          faszinierende Schönheit und Einzigartigkeit der chinesischen Landschaft erleben möchten.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tour" class="tour__Zhangjiajie">
+    <h2 class="tour__Zhangjiajie--heading">Beste Werte für Sie</h2>
+    <h3 class="tour__Zhangjiajie--mini-heading">Probieren Sie eine Vielzahl von Vorteilen aus, wenn Sie unsere Dienste
+      nutzen</h3>
+
+    <div class="tour__Zhangjiajie--benefits__main-container">
+      <!-- first benefit container -->
+      <div class="tour__Zhangjiajie--benefits__first-container flex-benefits-container">
+        <p><i class="fa-solid fa-plane-departure"></i></p>
+        <h4 class="tour__Zhangjiajie--benefits__first-container--heading">Abholung</h4>
+        <p class="tour__Zhangjiajie--benefits__first-container--para">Wir begleiten Sie vom Flughafen zum Hotel</p>
+      </div>
+
+      <!-- second benefit container -->
+      <div class="tour__Zhangjiajie--benefits__second-container flex-benefits-container">
+        <p><i class="fa-solid fa-handshake"></i></p>
+        <h4 class="tour__Zhangjiajie--benefits__first-container--heading">Einfaches Buchen</h4>
+        <p class="tour__Zhangjiajie--benefits__first-container--para">schnelle und einfache Buchung von Touren für
+          kommende Termine</p>
+      </div>
+
+      <!-- third benefit container -->
+      <div class="tour__Zhangjiajie--benefits__third-container flex-benefits-container">
+        <p><i class="fa-solid fa-street-view"></i></p>
+        <h4 class="tour__Zhangjiajie--benefits__first-container--heading">Bester Reiseführer</h4>
+        <p class="tour__Zhangjiajie--benefits__first-container--para">Unser bester Reiseführer ist bereit, Ihre Reise zu
+          führen</p>
+      </div>
+
+      <!-- fourth benefit container -->
+      <div class="tour__Zhangjiajie--benefits__fourth-container flex-benefits-container">
+        <p><i class="fa-solid fa-gift"></i></p>
+        <h4 class="tour__Zhangjiajie--benefits__first-container--heading">Menge Promotionen</h4>
+        <p class="tour__Zhangjiajie--benefits__first-container--para">Verschiedene Werbeaktionen und Verlosungen von
+          Touren</p>
+      </div>
+    </div>
+
+
+    <div class="tour__Zhangjiajie--choose-tour">
+      <h3 class="tour__Zhangjiajie--choose-tour__heading">Wählen Sie Ihre Tour</h3>
+
+      <div class="tour__Zhangjiajie--choose-tour__main-container">
+
+        <!-- first container -->
+        <div class="tour__Zhangjiajie--choose-tour__first-tour flex-tour-container">
+          <img src="img/tour/zhangjiajie avatar mountain.jpg" alt="avatar_mountain">
+          <h4>Avatar Mountain</h4>
+          <p class="price">$100<span> / person</span></p>
+          <div>
+            <p class="bewertungen">5.0</p>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="arrow_btn"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+
+        <!-- second container -->
+        <div class="tour__Zhangjiajie--choose-tour__second-tour flex-tour-container">
+          <img src="img/tour/Zhangjiajie_bridge.jpg" alt="zhangjiajie_bridge">
+          <h4>Brücke</h4>
+          <p class="price">$50<span>/ person</span></p>
+          <div>
+            <p class="bewertungen">4.9</p>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="arrow_btn"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+
+        <!-- third container -->
+        <div class="tour__Zhangjiajie--choose-tour__third-tour flex-tour-container">
+          <img src="img/tour/beautiful-waterfall-landscape.jpg" alt="zhangjiajie_bridge">
+          <h4>Wasserfall</h4>
+          <p class="price">$80<span> / person</span></p>
+          <div>
+            <p class="bewertungen">5.0</p>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="arrow_btn"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+
+        <!-- fourth container -->
+        <div class="tour__Zhangjiajie--choose-tour__fourth-tour flex-tour-container">
+          <img src="img/tour/Zhangjiajie_Fenghuang_Old_Town_Tour.jpg" alt="zhangjiajie_bridge">
+          <h4>Fenghuang Altes Dorf</h4>
+          <p class="price">$240<span> / person</span></p>
+          <div>
+            <p class="bewertungen">4.8</p>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="arrow_btn"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footer__main-container">
+      <!-- first section Container -->
+      <div class="footer__main-container--first-container">
+        <!-- first Part -->
+        <ul>
+          <p>Über Uns</p>
+          <li>Unsere Führer</li>
+          <li>Blog</li>
+          <li>Kontakt</li>
+        </ul>
+
+        <!-- second Part -->
+        <ul>
+          <p>FAQ</p>
+          <li>Persönliche Reise</li>
+          <li>Gruppenreise</li>
+          <li>Bezahlung der Tour</li>
+        </ul>
+
+        <!-- third Part -->
+        <ul>
+          <p>Weitere Informationen</p>
+          <li>Nutzungsbedingungen</li>
+          <li>Gesundheit und Sicherheit</li>
+          <li>Datenschutzbestimmungen</li>
+        </ul>
+      </div>
+
+      <!-- second section Container -->
+      <div class="footer__main-container--second-container">
+        <div class="copyright">
+          <p>&copy; copyright Henry Frank</p>
+        </div>
+
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/gsap.min.js"></script>
+  <script src="js/app.js" defer></script>
+</body>
+
+</html>
