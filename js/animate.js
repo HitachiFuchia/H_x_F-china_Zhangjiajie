@@ -31,8 +31,6 @@ const observer_secSkills = new IntersectionObserver((entries) => {
 
 const about__Zhangjiajie = document.querySelectorAll(".about-flex-container");
 
-console.log(about__Zhangjiajie);
-
 about__Zhangjiajie.forEach((el) => observer_secSkills.observe((el)));
 
 
@@ -66,7 +64,6 @@ const observer_flexTourContainer = new IntersectionObserver((entries) => {
 })
 
 const flexTourContainer = document.querySelectorAll(".flex-tour-container");
-console.log(flexTourContainer);
 
 flexTourContainer.forEach((el) => observer_flexTourContainer.observe((el)));
 
